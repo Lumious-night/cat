@@ -16,7 +16,7 @@
 <div data-role="page" id="foo">
 
 	<div data-role="header">
-		<h1>Foo</h1>
+		<h1>We are Diffinent</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
@@ -24,17 +24,17 @@
                 <li><a href="#bar2">
                     <img src="image/cat1.jpg">
                 <h2>緬因貓</h2>
-                <p>Broken Bells</p></a>
+                <p>溫柔的巨人</p></a>
                 </li>
                 <li><a href="#bar">
                     <img src="image/cat2.jpg">
                 <h2>暹羅貓</h2>
-                <p>Hot Chip</p></a>
+                <p>月亮鑽石</p></a>
                 </li>
                 <li><a href="#">
                     <img src="image/cat3.jpg">
                 <h2>布偶貓</h2>
-                <p>Phoenix</p></a>
+                <p>狗一樣的貓</p></a>
                 </li>
             </ul>
 	</div><!-- /footer -->
@@ -47,27 +47,26 @@
 		<h1>Bar</h1>
 	</div><!-- /header -->
 
-	<div role="main" class="ui-content">
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-        <p><a href="#foo" class="ui-btn ui-btn-b" >Back to foo</a></p>
-        <p><a href="#bar2" class="ui-btn ui-btn-b" >Bar2</a></p>
+	<div role="page" class="ui-content">
+		<p>暹羅貓（Siamese cat）是很早被承認的東方短毛貓品種之一。這個品種的由來尚未確定，相信是來自東南亞。據稱是源自暹羅（今泰國）寺廟裏飼養的貓。</p>
+        <p><a href="#foo" class="ui-btn ui-btn-b" >回首頁</a></p>
+        <p><a href="#bar2" class="ui-btn ui-btn-b" >緬因貓</a></p>
 	</div><!-- /content -->
 
-	<!-- Start of third page -->
-    <div data-role="page" id="bar2">
+</div><!-- /page -->
+
+    <!-- Start of third page -->
+    <div data-role="main" id="bar2">
 
         <div data-role="header">
-            <h1>bar2</h1>
+            <h1>緬因貓</h1>
         </div><!-- /header -->
     
-        <div role="main" class="ui-content">
-            <p>I'm third in the source order so I'm shown as the page.</p>
-            <p>View internal page called <a href="#bar" data-rel="dialog" data-transition="fade" >bar</a></p>
+        <div role="page" class="ui-content">
+            <p>緬因貓是北美洲自然產生的最早的長毛貓品種，原產於美國東岸緬因州附近。緬因貓是美國貓種當中數量最多的種群，除了其聰穎與活潑廣為人知以外，其獨一無二巨大的體型也令人過目難忘。緬因貓還有個迷人的稱號，「溫柔的巨人」。</p>
+            <p>回首頁 <a href="#foo"  data-rel="dialog" data-transition="fade"  >點我</a></p>
         </div><!-- /content -->
     
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
     </div><!-- /page -->
 </body>
 </html>
